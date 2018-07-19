@@ -1,0 +1,10 @@
+
+
+<h1>Rencontrez l'équipe !</h1>
+<p>Des jeunes femmes aux profils divers et aux compétences riches et complémentaires, motivées par l'entraide et l'action collective!</p>
+<% @users.each do |user| %>
+  <%=  link_to user_path(user) do %>
+    <p><%= user.email %></p>
+  <% end %>
+  <%= link_to "mettre à jour mon profil", edit_user_path(user) %>
+<% end %>
