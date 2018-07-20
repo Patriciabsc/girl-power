@@ -1,0 +1,60 @@
+html {
+    font-size: 18pt;
+  }
+
+    @media screen and (max-width: 1680px) {
+
+      html {
+        font-size: 14pt;
+      }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+
+      html {
+        font-size: 12pt;
+      }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+      html {
+        font-size: 11pt;
+      }
+
+    }
+
+    @media screen and (max-width: 360px) {
+
+      html {
+        font-size: 10pt;
+      }
+
+    }
+
+
+@media screen and (max-width: 736px) {
+
+    p.major {
+      font-size: 1.1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+
+  }
