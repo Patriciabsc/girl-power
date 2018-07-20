@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 50%), url('https://images.unsplash.com/photo-1501856777435-29877ed80a3d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=deeadc7e3ba616024d4628dc66de128f&auto=format&fit=crop&w=1050&q=80')">
+<div class="banner-home background-homepage">
   <div class="banner-content">
     <h1>Les drafteuses</h1>
     <h3>It's time to get women's power to help you grow</h3>
@@ -7,3 +7,45 @@
     <%= link_to "Rencontrez-nous", users_path, class:"btn-rounded-white" %>
   </div>
 </div>
+
+<div class="banner-full background-homepage-2">
+  <div class="banner-content">
+    <div class="width-70">
+      <h3>Notre mission - <strong>le WHY</strong></h3>
+      <p>Ramener les femmes au coeur du développement des entreprises</p>
+
+      <h3>Nos valeurs - <strong>le HOW</strong></h3>
+      <p>Nous croyions en l'intérêt primordiale pour les entreprises d'intégrer des femmes dans leur croissance<br>Saviez-vous que les startups gérées par des femmes génèrent 10% de chiffre d'affaires de plus que celles gérées par les hommes? (source : BCG)</p>
+      <ul class="list-inline">
+        <li><div class="icon">
+          <%= image_tag "bold.png", class:"small-icon" %>
+          <h5>AUDACE</h5>
+        </div></li>
+        <li><div class="icon">
+          <%= image_tag "help.png", class:"small-icon" %>
+          <h5>ENTRE-AIDE</h5>
+        </div></li>        <li><div class="icon">
+          <%= image_tag "kind.png", class:"small-icon" %>
+          <h5>BIENVEILLANCE</h5>
+        </div></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="banner-full background-homepage-3">
+    <div class="banner-content">
+      <div class="width-70">
+        <h3>Notre process - <strong>le WHAT</strong></h3>
+        <p>Les drafteuses est un collectif de femmes freelances souhaitant vous accompagner sur vos différents projets de croissance <br>Les membres viennent d'univers très différents et complémentaires : conseil, psychologie, design, marketing, banque d'affaires, développement web <br>Les drafteuses c'est un large éventail de compétences pour fitter avec vos besoins et un collectif d'entre-aide pour aider les femmes à vous atteindre</p>
+        <ul>
+          <li><p>Développement web - Ruby | Ruby on Rails | JavaScript | CSS | HTML5 | React</p></li>
+          <li><p>Stratégie commerciale - Plan Marketing | Branding | MVP | Lancement de produit | PR </p></li>
+          <li><p>Stratégie financière - Business Plan | Business Model | Plan de financement </p></li>
+        </ul>
+        <%= link_to "Découvrez nos projets", "#", class:"btn-rounded-blue" %>
+        <%= link_to "Découvrez nos profils", users_path, class:"btn-rounded-blue" %>
+      </div>
+    </div>
+  </div>
+
