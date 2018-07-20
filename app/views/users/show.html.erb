@@ -1,0 +1,11 @@
+<h2><%= @user.first_name.capitalize%> <%= @user.last_name.capitalize  %></h2>
+<p><%= @user.bio %></p>
+<ul><li><%= @user.skills %></li></ul>
+
+<!-- mettre liens externes en target blank et liens en images -->
+<div>
+  <%= link_to "Linkedin", @user.linkedin_link %> <%= link_to "Dribbble", @user.dribbble_link %> <%= link_to "GitHub", @user.github_link %>
+</div>
+
+
+<%= link_to "Compléter mon profil", edit_user_path(@user), class:"btn-rounded-white" %>

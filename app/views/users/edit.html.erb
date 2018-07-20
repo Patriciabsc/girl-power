@@ -1,0 +1,14 @@
+<%= simple_form_for @user do |f| %>
+  <%= f.input :first_name, label: "Prénom" %>
+  <%= f.input :last_name, label: "Nom" %>
+  <%= f.input :bio, as: :text, label: "Bio" %>
+  <%= f.input :phone, label: "Tél" %>
+  <%= f.input :github_link, label: "Lien GitHub" %>
+  <%= f.input :linkedin_link, label: "Lien Linkedin" %>
+  <%= f.input :dribbble_link, label: "Lien Dribbble" %>
+  <%= f.input :website, label: "Site personnel" %>
+  <%= f.input :skills, collection: User::SKILLS, as: :radio_buttons %>
+  <!-- photo à uploader -->
+
+  <%= f.button :submit %>
+<% end %>
