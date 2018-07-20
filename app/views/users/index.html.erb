@@ -1,10 +1,14 @@
+<div class="banner-full background-homepage-2">
+  <div class="banner-content">
+    <div class="width-70">
+      <h3>Les drafteuses - <strong>qui sommes-nous ?</strong></h3>
+      <p>Des jeunes femmes aux profils divers et aux compétences riches et complémentaires, motivées par l'entraide et l'action collective!</p>
+      <% @users.each do |user| %>
+        <%= link_to user_path(user) do %>
+          <%= render "shared/user_card", user: user %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
 
-
-<h1>Rencontrez l'équipe !</h1>
-<p>Des jeunes femmes aux profils divers et aux compétences riches et complémentaires, motivées par l'entraide et l'action collective!</p>
-<% @users.each do |user| %>
-  <%=  link_to user_path(user) do %>
-    <p><%= user.email %></p>
-  <% end %>
-  <%= link_to "mettre à jour mon profil", edit_user_path(user) %>
-<% end %>

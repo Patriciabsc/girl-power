@@ -1,4 +1,4 @@
-<h2><%= @user.first_name.capitalize%> <%= @user.last_name.capitalize  %></h2>
+<h2><%= @user.full_name %></h2>
 <p><%= @user.bio %></p>
 <ul><li><%= @user.skills %></li></ul>
 
@@ -8,4 +8,4 @@
 </div>
 
 
-<%= link_to "Compléter mon profil", edit_user_path(@user), class:"btn-rounded-white" %>
+<%= link_to "Compléter mon profil", edit_user_path(@user), class:"btn-rounded-blue" %>
