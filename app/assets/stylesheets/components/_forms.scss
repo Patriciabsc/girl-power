@@ -1,29 +1,16 @@
-
-// Helpers
-@mixin clearfix {
-   &:after {
-      content: "";
-      display: table;
-      clear: both;
-  }
-}
-
-.align-center {
-   text-align: center;
-}
+// NORMAL VERSION
 
 .get-in-touch {
    max-width: 650px;
-   margin: 0 auto;
+   margin: 50px auto 0px auto;
    position: relative;
-   top: 50%;
-   transform: translateY(-50%);
+  // top: 50%;
+   background-color: $white;
+   padding: 30px;
 
-  .title {
+  h2 {
      text-align: center;
      text-transform: uppercase;
-     line-height: 48px;
-     padding-bottom: 48px;
   }
 }
 
@@ -37,7 +24,10 @@
       width: 100%;
       height: 36px;
       border-width: 0 0 2px 0;
-      border-color: #000;
+      border-color: $black;
+      color: $black;
+      background-color: transparent;
+      line-height: 26px;
 
       &:focus {
          outline: none;
@@ -56,32 +46,44 @@
       bottom: 11px;
       cursor: text;
       transition: transform .2s ease-in-out;
+      color: $dark-gray;
+      line-height: 26px;
+      font-weight: lighter;
    }
 
    .submit-btn {
       display: inline-block;
-      background-color: #000;
-      color: #fff;
-      text-transform: uppercase;
-      padding: 8px 16px;
-      border: none;
+      // text-transform: uppercase;
+      letter-spacing: 1px;
       cursor: pointer;
-   }
-}
 
-.note {
-   position: absolute;
-   left: 0;
-   bottom: 10px;
-   width: 100%;
-   text-align: center;
-
-
-   .link {
-      color: #888;
-      text-decoration: none;
+      color: $light-gray;
+      border: 1px solid $pink;
+      background-color: $pink;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-weight: lighter;
+      opacity: 0.8;
+      transition: all 0.5s ease;
       &:hover {
-         text-decoration: underline;
+        opacity: 0.8;
+        background-color: $light-gray;
+        color: $pink;
+        text-decoration: none;
       }
    }
 }
+
+
+// INLINE VERSION
+
+.get-in-touch-inline {
+   max-width: 650px;
+   // margin: 20px auto 0px auto;
+   position: relative;
+  // top: 50%;
+   background-color: transparent;
+   padding-top: 25px;
+}
+
+

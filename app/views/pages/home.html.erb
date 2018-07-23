@@ -2,7 +2,7 @@
   <div class="banner-content">
     <h1>Les drafteuses</h1>
     <h3>It's time to get women's power to help you grow</h3>
-    <%= link_to "Contactez-nous", "#", class:"btn-rounded-white" %>
+    <%= link_to "Contactez-nous", pages_path(contact), class:"btn-rounded-white" %>
     <!-- test for index team - à enlever après-->
     <%= link_to "Rencontrez-nous", users_path, class:"btn-rounded-white" %>
   </div>
@@ -43,8 +43,31 @@
           <li><p>Stratégie commerciale - Plan Marketing | Branding | MVP | Lancement de produit | PR </p></li>
           <li><p>Stratégie financière - Business Plan | Business Model | Plan de financement </p></li>
         </ul>
-        <%= link_to "Découvrez nos projets", "#", class:"btn-rounded-blue" %>
-        <%= link_to "Découvrez nos profils", users_path, class:"btn-rounded-blue" %>
+        <%= link_to "Découvrez nos projets", "#", class:"btn-rounded-pink" %>
+        <%= link_to "Découvrez nos profils", users_path, class:"btn-rounded-pink" %>
+
+
+        <div class="get-in-touch-inline">
+          <form class="contact-form">
+
+            <div class="form-field col x-50">
+              <input id="email" class="input-text" type="text" required>
+              <label for="email" class="label">Email</label>
+            </div>
+
+            <div class="form-field col x-100">
+              <input id="message" class="input-text" type="text" required>
+              <label for="message" class="label">Message</label>
+            </div>
+
+            <div class="form-field col x-100 align-center">
+               <input class="submit-btn" type="submit" value="Envoyer">
+            </div>
+
+          </form>
+        </div>
+
+
       </div>
     </div>
   </div>

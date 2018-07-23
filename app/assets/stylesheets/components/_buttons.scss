@@ -5,6 +5,7 @@
   padding: 15px 20px;
   border-radius: 50px;
   font-weight: lighter;
+  letter-spacing: 1px;
   opacity: 0.8;
   transition: all 0.5s ease;
   &:hover {
@@ -15,19 +16,20 @@
   }
 }
 
-.btn-rounded-blue {
+.btn-rounded-pink {
   color: $light-gray;
-  border: 1px solid $blue;
-  background-color: $blue;
+  border: 1px solid $pink;
+  background-color: $pink;
   padding: 15px 20px;
   border-radius: 50px;
   font-weight: lighter;
+  letter-spacing: 1px;
   opacity: 0.8;
   transition: all 0.5s ease;
   &:hover {
     opacity: 0.8;
     background-color: $light-gray;
-    color: $blue;
+    color: $pink;
     text-decoration: none;
   }
 }
